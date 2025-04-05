@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Información del Estudiante</title>
+  <!-- Agrega los enlaces a las hojas de estilo de Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<div class="container mt-5">
+  <h1>Información del Estudiante</h1>
+  <!-- Mostrar los datos del estudiante -->
+  <div class="row">
+    <div class="col">
+      <p><strong>Nombres:</strong> <span th:text="${estudiante.nombres}"></span></p>
+      <p><strong>Apellidos:</strong> <span th:text="${estudiante.apellidos}"></span></p>
+      <p><strong>Tipo de Colegio:</strong> <span th:text="${estudiante.tipo_colegio.nombre}"></span></p>
+    </div>
+  </div>
+  <!-- Formulario para ingresar el número de cuotas -->
+  <div class="row mt-4">
+    <div class="col">
+      <form action="#" method="post" th:object="${cuotasForm}">
+        <div class="form-group">
+          <label for="nro_cuota">Número de Cuotas (Máximo: <span th:text="${estudiante.tipo_colegio.max_cuotas}"></span>):</label>
+          <input type="number" class="form-control" id="nro_cuota" th:field="*{nro_cuota}" min="1" th:max="${estudiante.tipo_colegio.max_cuotas}" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Guardar</button>
+      </form>
+    </div>
+  </div>
+</div>
+</body>
+</html>

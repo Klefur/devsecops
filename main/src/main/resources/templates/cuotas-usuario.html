@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Cuotas del Usuario</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-6">
+            <!-- Datos del Usuario -->
+            <h2>Datos del Usuario</h2>
+            <p><strong>Nombres:</strong> <span th:text="${usuario.nombres}"></span></p>
+            <p><strong>RUT:</strong> <span th:text="${usuario.rut}"></span></p>
+        </div>
+    </div>
+    <a th:href="@{/pago/{id}(id=${usuario.id})}" class="btn btn-secondary mt-2">Generar cuotas</a>
+    <div class="row mt-4">
+        <div class="col-md-12">
+            <!-- Lista de Cuotas -->
+            <h2>Cuotas</h2>
+            <table class="table table-striped">
+                <thead>
+                <tr>
+                    <th>Número de Cuota</th>
+                    <th>Monto</th>
+                    <th>Descuento total</th>
+                    <th>Interes</th>
+                    <th>Fecha de Pago</th>
+                    <th>Fecha de vencimiento</th>
+                    <th>Estado pago</th>
+                    <th>Acción</th>
+                </tr>
+                </thead>
+                <tbody>
+                <!-- Iterar sobre las cuotas -->
+                <tr th:if="${!cuotas.isEmpty()}" th:each="index : ${#numbers.sequence(0, #lists.size(cuotas)-1)}">
+                    <td th:text="${cuotas[index].nro_cuota}"></td>
+                    <td th:text="${cuotas[index].total}"></td>
+                    <td th:text="${descuento[index]}"></td>
+                    <td th:text="${interes[index]}"></td>
+                    <td th:text="${#dates.format(cuotas[index].fecha_pago, 'dd/MM/yyyy')}"></td>
+                    <td th:text="${#dates.format(cuotas[index].fecha_plazo, 'dd/MM/yyyy')}"></td>
+                    <td>
+                        <span th:if="${cuotas[index].pagado}">Pagado</span>
+                        <span th:unless="${cuotas[index].pagado}">No Pagado</span>
+                    </td>
+                    <td>
+                        <form method="post" action="/pago/pagar-cuota">
+                            <input type="hidden" name="cuotaId" th:value="${cuotas[index].id}" />
+                            <button type="submit">Pagar</button>
+                        </form>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <a href="/" class="btn btn-secondary mt-2">Volver a la lista de usuarios</a>
+</div>
+</body>
+</html>

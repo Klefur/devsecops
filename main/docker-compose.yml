@@ -1,0 +1,56 @@
+version: '3.5'
+
+services:
+  nginx:
+    image: nginx:latest
+    container_name: nginx-proxy
+    restart: always
+    ports:
+      - "80:80"
+    volumes:
+      - ./nginx/conf.d:/etc/nginx/conf.d
+    depends_on:
+      - topeducation1
+      - topeducation2
+
+  postgres:
+    image: postgres:16-alpine3.19
+    container_name: postgres_container
+    environment:
+      POSTGRES_DB: top_education
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: 1234
+    ports:
+      - "5432:5432"
+
+  topeducation1:
+    container_name: topeducation1
+    image: klefurusach/tingeso-pep1
+    ports:
+      - "8090:8090"
+    environment:
+      - SPRING_DATASOURCE_URL=jdbc:postgresql://postgres:5432/top_education
+      - SPRING_DATASOURCE_USERNAME=postgres
+      - SPRING_DATASOURCE_PASSWORD=1234
+      - SPRING_JPA_HIBERNATE_DDL_AUTO=create
+    deploy:
+      restart_policy:
+        condition: on-failure
+    depends_on:
+      - postgres
+
+  topeducation2:
+    container_name: topeducation2
+    image: klefurusach/tingeso-pep1
+    ports:
+      - "8091:8090"
+    environment:
+      - SPRING_DATASOURCE_URL=jdbc:postgresql://postgres:5432/top_education
+      - SPRING_DATASOURCE_USERNAME=postgres
+      - SPRING_DATASOURCE_PASSWORD=1234
+      - SPRING_JPA_HIBERNATE_DDL_AUTO=create
+    deploy:
+      restart_policy:
+        condition: on-failure
+    depends_on:
+      - postgres

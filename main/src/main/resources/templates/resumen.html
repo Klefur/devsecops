@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net/thymeleaf/layout" xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity4">
+<head>
+    <title>Reporte de Estado de Pagos</title>
+    <!-- Agrega los enlaces a los archivos CSS de Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+<div class="container">
+    <h1>Reporte de Estado de Pagos de Estudiantes</h1>
+
+    <table class="table table-striped">
+        <thead>
+        <tr>
+            <th>RUT Estudiante</th>
+            <th>Nombre del Estudiante</th>
+            <th>Nro. Exámenes Rendidos</th>
+            <th>Promedio Puntaje Exámenes</th>
+            <th>Monto Total Arancel Base</th>
+            <th>Monto Total Arancel a Pagar</th>
+            <th>Tipo de Pago</th>
+            <th>Nro. Total de Cuotas Pactadas</th>
+            <th>Nro. Cuotas Pagadas</th>
+            <th>Monto Total Pagado</th>
+            <th>Fecha Último Pago</th>
+            <th>Saldo por Pagar</th>
+            <th>Nro. Cuotas con Retraso</th>
+        </tr>
+        </thead>
+        <tbody>
+        <!-- Itera sobre los datos de los estudiantes y muestra cada fila -->
+        <tr>
+            <td th:text="${estudiante.rut}"></td>
+            <td>
+                <p th:text="${estudiante.nombres}"></p>
+                <p th:text="${estudiante.apellidos}"></p>
+            </td>
+            <td th:text="${numeroExamenes}"></td>
+            <td th:text="${promedioPuntaje}"></td>
+            <td th:text="${montoArancelBase}"></td>
+            <td th:text="${montoArancel}"></td>
+            <td>
+                <span th:if="${totalCuotas[0] == 1}">Contado</span>
+                <span th:unless="${totalCuotas[0] == 1}">Cuotas</span>
+            </td>
+            <td th:text="${totalCuotas[0]}"></td>
+            <td th:text="${totalCuotas[1]}"></td>
+            <td th:text="${pagadoPagar[0]}"></td>
+            <td th:text="${#dates.format(fechaUltimoPago, 'dd/MM/yyyy')}"></td>
+            <td th:text="${pagadoPagar[1]}"></td>
+            <td th:text="${totalCuotas[2]}"></td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+<!-- Agrega el enlace al archivo JavaScript de Bootstrap si es necesario -->
+<!-- <script th:src="@{/webjars/bootstrap/5.3.0/js/bootstrap.min.js}"></script> -->
+</body>
+</html>

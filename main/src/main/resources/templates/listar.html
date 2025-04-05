@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Listado de Usuarios</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+<div class="container">
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="/">Inicio</a>
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="/registro">Registro</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/nota">Subir notas</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <h1>Listado de Estudiantes</h1>
+  <table class="table">
+    <thead>
+    <tr>
+      <th>ID</th>
+      <th>Nombres</th>
+      <th>Apellidos</th>
+      <th>Fecha de Nacimiento</th>
+      <th>Año de Graduación</th>
+      <th>Tipo de Colegio</th>
+    </tr>
+    </thead>
+    <tbody>
+    <!-- Utilizamos Thymeleaf para iterar sobre la lista de usuarios -->
+    <tr th:each="usuario : ${usuarios}">
+      <td th:text="${usuario.id}"></td>
+      <td th:text="${usuario.nombres}"></td>
+      <td th:text="${usuario.apellidos}"></td>
+      <td th:text="${#dates.format(usuario.fecha_nacimiento, 'dd/MM/yyyy')}"></td>
+      <td th:text="${usuario.grad_year}"></td>
+      <td th:text="${usuario.tipo_colegio.getNombre()}"></td>
+      <td>
+        <a th:href="@{/resumen/{id}(id=${usuario.id})}" class="btn btn-secondary btn-sm">Ver Resumen</a>
+        <a th:href="@{/pago/ver-cuotas/{id}(id=${usuario.id})}" class="btn btn-secondary btn-sm">Ver Cuotas</a>
+      </td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+</body>
+</html>
