@@ -1,0 +1,8 @@
+# Open terminal in the Jenkins container
+docker exec -u 0 -it jenkins bash
+
+-----
+# Install Docker in Alpine Linux
+apk update
+apk add docker
+exit
