@@ -70,7 +70,7 @@ public class ExcelService {
             for (Usuario usuario : usuarios) {
                 Row row = sheet.createRow(rowNum++);
                 
-                System.err.println("aqui 2");
+                
                 // Datos básicos
                 row.createCell(0).setCellValue(usuario.getId());
                 row.createCell(1).setCellValue(usuario.getNombres());
