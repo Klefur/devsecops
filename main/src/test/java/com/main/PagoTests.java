@@ -35,6 +35,7 @@ public class PagoTests {
         user = uServ.crear(user, 1L);
 
 
+
         Pago cuotaForm = new Pago();
         cuotaForm.setNro_cuota(5);
         pagoServ.generarCuotas(cuotaForm, user.getId());

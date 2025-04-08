@@ -35,6 +35,7 @@ public class UsuarioTests {
         user.setRut("1234567");
         user.setFecha_nacimiento(fecha);
         user.setNombre_colegio("College");
+        user.setId(12L);
         user = uServ.crear(user, 1L);
         assertNotNull(uServ.getALl());
         assertNotNull(uServ.show(user.getId()));
