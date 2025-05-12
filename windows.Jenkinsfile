@@ -18,21 +18,8 @@ pipeline {
                     bat "gradle test"
                 }
             }
-        }        
-        stage("Build and Push Docker Image") {
-            steps {
-                dir("main") {
-                    script {
-                        withCredentials([usernamePassword(credentialsId: 'docker-credentials', usernameVariable: 'DOCKER_USERNAME', passwordVariable: 'DOCKER_PASSWORD')]) {
-                            bat 'docker login -u %DOCKER_USERNAME% -p %DOCKER_PASSWORD%'
-                        }
-                        bat "docker build -t klefurusach/tingeso-pep1 ."
-                        bat "docker push klefurusach/tingeso-pep1"
-                        bat "docker logout"
-                    }
-                }
-            }
         }
+
         stage("SAST Test - SonarQube"){
             steps{
                 dir("main"){
@@ -51,6 +38,22 @@ pipeline {
                 }
             }
         }
+
+        stage("Build and Push Docker Image") {
+            steps {
+                dir("main") {
+                    script {
+                        withCredentials([usernamePassword(credentialsId: 'docker-credentials', usernameVariable: 'DOCKER_USERNAME', passwordVariable: 'DOCKER_PASSWORD')]) {
+                            bat 'docker login -u %DOCKER_USERNAME% -p %DOCKER_PASSWORD%'
+                        }
+                        bat "docker build -t klefurusach/tingeso-pep1 ."
+                        bat "docker push klefurusach/tingeso-pep1"
+                        bat "docker logout"
+                    }
+                }
+            }
+        }
+        
 
         stage("Deploy") {
             steps {
