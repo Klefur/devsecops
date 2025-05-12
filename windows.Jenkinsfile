@@ -6,7 +6,7 @@ pipeline {
     stages {
         stage('Build JAR File') {
             steps {
-                checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/Klefur/devsecops']])
+                checkout scmGit(branches: [[name: '*/sonarqube']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/Klefur/devsecops']])
                 dir("main") {
                     bat "gradle clean build"
                 }
