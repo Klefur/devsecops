@@ -8,3 +8,14 @@ services:
       POSTGRES_PASSWORD: 1234
     ports:
       - "5433:5432"
+  zap:
+    image: zaproxy/zap-stable
+    container_name: zap
+    ports:
+      - "8081:8080"  # Puedes cambiar el puerto si es necesario
+    volumes:
+      - ./zap/wrk:/zap/wrk  # Guarda los resultados del escaneo en tu máquina local
+    environment:
+      - ZAP_HOME=/zap
+    entrypoint: ["zap-x.sh", "-daemon", "-port", "8080", "-config", "api.disablekey=true"]  # Configuración inicial para ZAP
+    restart: always
