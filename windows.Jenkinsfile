@@ -41,6 +41,17 @@ pipeline {
             }
         }
 
+        stage('Quality Gate') {
+            steps {
+                script {
+                    def qg = waitForQualityGate()
+                    if (qg.status != 'OK') {
+                        error "Quality Gate failed: ${qg.status}" 
+                    }
+                }
+            }
+        }
+
         stage("Deploy") {
             steps {
                 dir("main") {
