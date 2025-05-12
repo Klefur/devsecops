@@ -33,6 +33,14 @@ pipeline {
                 }
             }
         }
+        stage("SAST Test - SonarQube"){
+            steps{
+                dir("main"){
+                    bat "gradle sonar"
+                }
+            }
+        }
+
         stage("Deploy") {
             steps {
                 dir("main") {
