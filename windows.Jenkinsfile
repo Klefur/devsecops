@@ -51,7 +51,7 @@ pipeline {
                 script {
                     try {
                         // Desactivar el comportamiento de fallo automático en errores
-                        sh '''
+                        bat '''
                             set +e
                             docker exec -u root zap zap-baseline.py -t http://nginx-proxy -r zap_report.html -J zap_out.json
                             ZAP_EXIT=$?
