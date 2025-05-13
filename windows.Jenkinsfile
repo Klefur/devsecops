@@ -3,6 +3,9 @@ pipeline {
     tools {
         gradle "gradle"
     }
+    environment {
+        SONARQUBE_SERVER = 'SonarQube' 
+    }
     stages {
         stage('Build JAR File') {
             steps {
@@ -12,6 +15,7 @@ pipeline {
                 }
             }
         }
+        
         stage("Test") {
             steps {
                 dir("main") {
@@ -20,10 +24,14 @@ pipeline {
             }
         }
 
-        stage("SAST Test - SonarQube"){
-            steps{
-                dir("main"){
-                    bat "gradle sonar"
+        stage("SAST Test - SonarQube") {
+           steps {
+                dir("main") {
+                withCredentials([string(credentialsId: 'sonarqube-token', variable: 'SONAR_TOKEN')]) {
+                    withSonarQubeEnv(SONARQUBE_SERVER) {
+                        bat "gradle sonar -Dsonar.token=${env.SONAR_TOKEN}"
+                        }
+                    }
                 }
             }
         }
@@ -31,9 +39,9 @@ pipeline {
         stage('Quality Gate') {
             steps {
                 script {
-                    def qg = waitForQualityGate()
-                    if (qg.status != 'OK') {
-                        error "Quality Gate failed: ${qg.status}" 
+                    timeout(time: 1, unit: 'MINUTES'){
+                        waitForQualityGate abortPipeline: true
+                        
                     }
                 }
             }
@@ -53,7 +61,6 @@ pipeline {
                 }
             }
         }
-        
 
         stage("Deploy") {
             steps {
@@ -65,4 +72,4 @@ pipeline {
             }
         }
     }
-}    
+}
