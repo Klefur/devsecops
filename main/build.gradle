@@ -25,14 +25,6 @@ sonarqube {
         property "sonar.projectName", "devsecops"
         property "sonar.host.url", "http://localhost:9000"
         property "sonar.token", "sqp_3be38676070c68cdb2d1f10c19022ca47c48dece"
-		property "sonar.tests", "src/test/java"
-        property "sonar.java.binaries", "$buildDir/classes"
-
-		// // Especifica la ubicación del reporte de cobertura si corresponde (por ejemplo con JaCoCo)
-        // property "sonar.javascript.lcov.reportPaths", "build/reports/lcov-report/lcov-report.json"
-        
-        // // Si tienes otros reportes de cobertura (por ejemplo, Jacoco en Java)
-        // property "sonar.coverage.jacoco.xmlReportPaths", "build/reports/jacoco/test/jacocoTestReport.xml"
     }
 }
 
