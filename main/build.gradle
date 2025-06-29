@@ -27,7 +27,7 @@ sonarqube {
         property "sonar.projectKey", "devsecops"
         property "sonar.projectName", "devsecops"
         property "sonar.host.url", "http://localhost:9000"
-        property "sonar.token", "sqp_3be38676070c68cdb2d1f10c19022ca47c48dece"
+        property "sonar.token", "sqp_aa2d6b2efeb3989b0ade07c43f4cd28159977461"
     }
 }
 
