@@ -37,6 +37,19 @@ pipeline {
                 }
             }
         }
+
+        stage("SAST Test - SonarQube") {
+           steps {
+                dir("main") {
+                withCredentials([string(credentialsId: 'sonarqube-token', variable: 'SONAR_TOKEN')]) {
+                    withSonarQubeEnv(SONARQUBE_SERVER) {
+                        bat "gradle sonar -Dsonar.token=${env.SONAR_TOKEN}"
+                        }
+                    }
+                }
+            }
+        }
+
         stage("Deploy") {
             steps {
                 dir("main") {
@@ -72,5 +85,8 @@ pipeline {
                 }
             }
         }
+
+
+
     }
 }
