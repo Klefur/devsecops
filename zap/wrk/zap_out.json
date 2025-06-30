@@ -1,7 +1,7 @@
 {
 	"@programName": "ZAP",
 	"@version": "2.16.1",
-	"@generated": "Tue, 13 May 2025 00:23:56",
+	"@generated": "Mon, 30 Jun 2025 00:24:28",
 	"site":[ 
 		{
 			"@name": "http://nginx-proxy",
@@ -20,7 +20,7 @@
 					"desc": "<p>No Anti-CSRF tokens were found in a HTML submission form.</p><p>A cross-site request forgery is an attack that involves forcing a victim to send an HTTP request to a target destination without their knowledge or intent in order to perform an action as the victim. The underlying cause is application functionality using predictable URL/form actions in a repeatable way. The nature of the attack is that CSRF exploits the trust that a web site has for a user. By contrast, cross-site scripting (XSS) exploits the trust that a user has for a web site. Like XSS, CSRF attacks are not necessarily cross-site, but they can be. Cross-site request forgery is also known as CSRF, XSRF, one-click attack, session riding, confused deputy, and sea surf.</p><p></p><p>CSRF attacks are effective in a number of situations, including:</p><p>    * The victim has an active session on the target site.</p><p>    * The victim is authenticated via HTTP auth on the target site.</p><p>    * The victim is on the same local network as the target site.</p><p></p><p>CSRF has primarily been used to perform an action against a target site using the victim's privileges, but recent techniques have been discovered to disclose information by gaining access to the response. The risk of information disclosure is dramatically increased when the target site is vulnerable to XSS, because XSS can be used as a platform for CSRF, allowing the attack to operate within the bounds of the same-origin policy.</p>",
 					"instances":[ 
 						{
-							"id": "49",
+							"id": "19",
 							"uri": "http://nginx-proxy/nota",
 							"method": "GET",
 							"param": "",
@@ -29,7 +29,7 @@
 							"otherinfo": "No known Anti-CSRF token [anticsrf, CSRFToken, __RequestVerificationToken, csrfmiddlewaretoken, authenticity_token, OWASP_CSRFTOKEN, anoncsrf, csrf_token, _csrf, _csrfSecret, __csrf_magic, CSRF, _token, _csrf_token, _csrfToken] was found in the following HTML form: [Form 1: \"csvFile\" ]."
 						},
 						{
-							"id": "88",
+							"id": "149",
 							"uri": "http://nginx-proxy/pago/100",
 							"method": "GET",
 							"param": "",
@@ -38,7 +38,7 @@
 							"otherinfo": "No known Anti-CSRF token [anticsrf, CSRFToken, __RequestVerificationToken, csrfmiddlewaretoken, authenticity_token, OWASP_CSRFTOKEN, anoncsrf, csrf_token, _csrf, _csrfSecret, __csrf_magic, CSRF, _token, _csrf_token, _csrfToken] was found in the following HTML form: [Form 1: \"nro_cuota\" ]."
 						},
 						{
-							"id": "144",
+							"id": "148",
 							"uri": "http://nginx-proxy/pago/1000",
 							"method": "GET",
 							"param": "",
@@ -47,7 +47,7 @@
 							"otherinfo": "No known Anti-CSRF token [anticsrf, CSRFToken, __RequestVerificationToken, csrfmiddlewaretoken, authenticity_token, OWASP_CSRFTOKEN, anoncsrf, csrf_token, _csrf, _csrfSecret, __csrf_magic, CSRF, _token, _csrf_token, _csrfToken] was found in the following HTML form: [Form 1: \"nro_cuota\" ]."
 						},
 						{
-							"id": "143",
+							"id": "147",
 							"uri": "http://nginx-proxy/pago/200",
 							"method": "GET",
 							"param": "",
@@ -56,7 +56,7 @@
 							"otherinfo": "No known Anti-CSRF token [anticsrf, CSRFToken, __RequestVerificationToken, csrfmiddlewaretoken, authenticity_token, OWASP_CSRFTOKEN, anoncsrf, csrf_token, _csrf, _csrfSecret, __csrf_magic, CSRF, _token, _csrf_token, _csrfToken] was found in the following HTML form: [Form 1: \"nro_cuota\" ]."
 						},
 						{
-							"id": "138",
+							"id": "153",
 							"uri": "http://nginx-proxy/pago/300",
 							"method": "GET",
 							"param": "",
@@ -65,7 +65,7 @@
 							"otherinfo": "No known Anti-CSRF token [anticsrf, CSRFToken, __RequestVerificationToken, csrfmiddlewaretoken, authenticity_token, OWASP_CSRFTOKEN, anoncsrf, csrf_token, _csrf, _csrfSecret, __csrf_magic, CSRF, _token, _csrf_token, _csrfToken] was found in the following HTML form: [Form 1: \"nro_cuota\" ]."
 						},
 						{
-							"id": "147",
+							"id": "150",
 							"uri": "http://nginx-proxy/pago/400",
 							"method": "GET",
 							"param": "",
@@ -74,7 +74,7 @@
 							"otherinfo": "No known Anti-CSRF token [anticsrf, CSRFToken, __RequestVerificationToken, csrfmiddlewaretoken, authenticity_token, OWASP_CSRFTOKEN, anoncsrf, csrf_token, _csrf, _csrfSecret, __csrf_magic, CSRF, _token, _csrf_token, _csrfToken] was found in the following HTML form: [Form 1: \"nro_cuota\" ]."
 						},
 						{
-							"id": "145",
+							"id": "146",
 							"uri": "http://nginx-proxy/pago/500",
 							"method": "GET",
 							"param": "",
@@ -83,7 +83,7 @@
 							"otherinfo": "No known Anti-CSRF token [anticsrf, CSRFToken, __RequestVerificationToken, csrfmiddlewaretoken, authenticity_token, OWASP_CSRFTOKEN, anoncsrf, csrf_token, _csrf, _csrfSecret, __csrf_magic, CSRF, _token, _csrf_token, _csrfToken] was found in the following HTML form: [Form 1: \"nro_cuota\" ]."
 						},
 						{
-							"id": "141",
+							"id": "144",
 							"uri": "http://nginx-proxy/pago/600",
 							"method": "GET",
 							"param": "",
@@ -92,7 +92,7 @@
 							"otherinfo": "No known Anti-CSRF token [anticsrf, CSRFToken, __RequestVerificationToken, csrfmiddlewaretoken, authenticity_token, OWASP_CSRFTOKEN, anoncsrf, csrf_token, _csrf, _csrfSecret, __csrf_magic, CSRF, _token, _csrf_token, _csrfToken] was found in the following HTML form: [Form 1: \"nro_cuota\" ]."
 						},
 						{
-							"id": "146",
+							"id": "145",
 							"uri": "http://nginx-proxy/pago/700",
 							"method": "GET",
 							"param": "",
@@ -101,7 +101,7 @@
 							"otherinfo": "No known Anti-CSRF token [anticsrf, CSRFToken, __RequestVerificationToken, csrfmiddlewaretoken, authenticity_token, OWASP_CSRFTOKEN, anoncsrf, csrf_token, _csrf, _csrfSecret, __csrf_magic, CSRF, _token, _csrf_token, _csrfToken] was found in the following HTML form: [Form 1: \"nro_cuota\" ]."
 						},
 						{
-							"id": "142",
+							"id": "152",
 							"uri": "http://nginx-proxy/pago/800",
 							"method": "GET",
 							"param": "",
@@ -110,7 +110,7 @@
 							"otherinfo": "No known Anti-CSRF token [anticsrf, CSRFToken, __RequestVerificationToken, csrfmiddlewaretoken, authenticity_token, OWASP_CSRFTOKEN, anoncsrf, csrf_token, _csrf, _csrfSecret, __csrf_magic, CSRF, _token, _csrf_token, _csrfToken] was found in the following HTML form: [Form 1: \"nro_cuota\" ]."
 						},
 						{
-							"id": "148",
+							"id": "151",
 							"uri": "http://nginx-proxy/pago/900",
 							"method": "GET",
 							"param": "",
@@ -119,7 +119,7 @@
 							"otherinfo": "No known Anti-CSRF token [anticsrf, CSRFToken, __RequestVerificationToken, csrfmiddlewaretoken, authenticity_token, OWASP_CSRFTOKEN, anoncsrf, csrf_token, _csrf, _csrfSecret, __csrf_magic, CSRF, _token, _csrf_token, _csrfToken] was found in the following HTML form: [Form 1: \"nro_cuota\" ]."
 						},
 						{
-							"id": "45",
+							"id": "18",
 							"uri": "http://nginx-proxy/registro",
 							"method": "GET",
 							"param": "",
@@ -134,7 +134,7 @@
 					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet.html</p><p>https://cwe.mitre.org/data/definitions/352.html</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "16"
+					"sourceid": "15"
 				},
 				{
 					"pluginid": "10038",
@@ -147,7 +147,7 @@
 					"desc": "<p>Content Security Policy (CSP) is an added layer of security that helps to detect and mitigate certain types of attacks, including Cross Site Scripting (XSS) and data injection attacks. These attacks are used for everything from data theft to site defacement or distribution of malware. CSP provides a set of standard HTTP headers that allow website owners to declare approved sources of content that browsers should be allowed to load on that page \u2014 covered types are JavaScript, CSS, HTML frames, fonts, images and embeddable objects such as Java applets, ActiveX, audio and video files.</p>",
 					"instances":[ 
 						{
-							"id": "18",
+							"id": "16",
 							"uri": "http://nginx-proxy",
 							"method": "GET",
 							"param": "",
@@ -156,7 +156,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "16",
+							"id": "23",
 							"uri": "http://nginx-proxy/",
 							"method": "GET",
 							"param": "",
@@ -165,7 +165,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "20",
+							"id": "9",
 							"uri": "http://nginx-proxy/nota",
 							"method": "GET",
 							"param": "",
@@ -174,16 +174,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "37",
-							"uri": "http://nginx-proxy/pago/ver-cuotas/100",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"id": "14",
+							"id": "36",
 							"uri": "http://nginx-proxy/pago/ver-cuotas/200",
 							"method": "GET",
 							"param": "",
@@ -192,7 +183,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "31",
+							"id": "12",
 							"uri": "http://nginx-proxy/pago/ver-cuotas/300",
 							"method": "GET",
 							"param": "",
@@ -201,7 +192,16 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "30",
+							"id": "41",
+							"uri": "http://nginx-proxy/pago/ver-cuotas/500",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "24",
 							"uri": "http://nginx-proxy/pago/ver-cuotas/600",
 							"method": "GET",
 							"param": "",
@@ -210,35 +210,8 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "40",
-							"uri": "http://nginx-proxy/registro",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"id": "7",
-							"uri": "http://nginx-proxy/reporte",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"id": "28",
-							"uri": "http://nginx-proxy/resumen/200",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"id": "27",
-							"uri": "http://nginx-proxy/resumen/300",
+							"id": "22",
+							"uri": "http://nginx-proxy/pago/ver-cuotas/700",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -247,7 +220,34 @@
 						},
 						{
 							"id": "8",
-							"uri": "http://nginx-proxy/resumen/500",
+							"uri": "http://nginx-proxy/registro",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "13",
+							"uri": "http://nginx-proxy/reporte",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "26",
+							"uri": "http://nginx-proxy/resumen/300",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "47",
+							"uri": "http://nginx-proxy/resumen/400",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -261,7 +261,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/Security/CSP/Introducing_Content_Security_Policy</p><p>https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html</p><p>https://www.w3.org/TR/CSP/</p><p>https://w3c.github.io/webappsec-csp/</p><p>https://web.dev/articles/csp</p><p>https://caniuse.com/#feat=contentsecuritypolicy</p><p>https://content-security-policy.com/</p>",
 					"cweid": "693",
 					"wascid": "15",
-					"sourceid": "1"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "10020",
@@ -274,8 +274,17 @@
 					"desc": "<p>The response does not protect against 'ClickJacking' attacks. It should include either Content-Security-Policy with 'frame-ancestors' directive or X-Frame-Options.</p>",
 					"instances":[ 
 						{
-							"id": "2",
+							"id": "0",
 							"uri": "http://nginx-proxy",
+							"method": "GET",
+							"param": "x-frame-options",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "4",
+							"uri": "http://nginx-proxy/",
 							"method": "GET",
 							"param": "x-frame-options",
 							"attack": "",
@@ -292,16 +301,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "24",
-							"uri": "http://nginx-proxy/pago/ver-cuotas/100",
-							"method": "GET",
-							"param": "x-frame-options",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"id": "5",
+							"id": "10",
 							"uri": "http://nginx-proxy/pago/ver-cuotas/200",
 							"method": "GET",
 							"param": "x-frame-options",
@@ -310,7 +310,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "15",
+							"id": "5",
 							"uri": "http://nginx-proxy/pago/ver-cuotas/300",
 							"method": "GET",
 							"param": "x-frame-options",
@@ -319,7 +319,16 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "13",
+							"id": "20",
+							"uri": "http://nginx-proxy/pago/ver-cuotas/500",
+							"method": "GET",
+							"param": "x-frame-options",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "15",
 							"uri": "http://nginx-proxy/pago/ver-cuotas/600",
 							"method": "GET",
 							"param": "x-frame-options",
@@ -328,8 +337,8 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "21",
-							"uri": "http://nginx-proxy/registro",
+							"id": "7",
+							"uri": "http://nginx-proxy/pago/ver-cuotas/700",
 							"method": "GET",
 							"param": "x-frame-options",
 							"attack": "",
@@ -338,6 +347,15 @@
 						},
 						{
 							"id": "3",
+							"uri": "http://nginx-proxy/registro",
+							"method": "GET",
+							"param": "x-frame-options",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "1",
 							"uri": "http://nginx-proxy/reporte",
 							"method": "GET",
 							"param": "x-frame-options",
@@ -346,16 +364,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "19",
-							"uri": "http://nginx-proxy/resumen/200",
-							"method": "GET",
-							"param": "x-frame-options",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"id": "23",
+							"id": "11",
 							"uri": "http://nginx-proxy/resumen/300",
 							"method": "GET",
 							"param": "x-frame-options",
@@ -364,8 +373,8 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "4",
-							"uri": "http://nginx-proxy/resumen/500",
+							"id": "14",
+							"uri": "http://nginx-proxy/resumen/400",
 							"method": "GET",
 							"param": "x-frame-options",
 							"attack": "",
@@ -373,7 +382,7 @@
 							"otherinfo": ""
 						}
 					],
-					"count": "11",
+					"count": "12",
 					"solution": "<p>Modern Web browsers support the Content-Security-Policy and X-Frame-Options HTTP headers. Ensure one of them is set on all web pages returned by your site/app.</p><p>If you expect the page to be framed only by pages on your server (e.g. it's part of a FRAMESET) then you'll want to use SAMEORIGIN, otherwise if you never expect the page to be framed, you should use DENY. Alternatively consider implementing Content Security Policy's \"frame-ancestors\" directive.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options</p>",
@@ -392,7 +401,16 @@
 					"desc": "<p>The integrity attribute is missing on a script or link tag served by an external server. The integrity tag prevents an attacker who have gained access to this server from injecting a malicious content.</p>",
 					"instances":[ 
 						{
-							"id": "123",
+							"id": "126",
+							"uri": "http://nginx-proxy",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<link\r\n      rel=\"stylesheet\"\r\n      href=\"https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css\"\r\n    />",
+							"otherinfo": ""
+						},
+						{
+							"id": "141",
 							"uri": "http://nginx-proxy/",
 							"method": "GET",
 							"param": "",
@@ -401,7 +419,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "121",
+							"id": "127",
 							"uri": "http://nginx-proxy/nota",
 							"method": "GET",
 							"param": "",
@@ -410,17 +428,8 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "122",
-							"uri": "http://nginx-proxy/pago/100",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<link href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/css/bootstrap.min.css\" rel=\"stylesheet\">",
-							"otherinfo": ""
-						},
-						{
-							"id": "132",
-							"uri": "http://nginx-proxy/pago/ver-cuotas/100",
+							"id": "131",
+							"uri": "http://nginx-proxy/pago/ver-cuotas/1000",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -428,7 +437,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "127",
+							"id": "139",
 							"uri": "http://nginx-proxy/pago/ver-cuotas/200",
 							"method": "GET",
 							"param": "",
@@ -437,8 +446,8 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "126",
-							"uri": "http://nginx-proxy/pago/ver-cuotas/300",
+							"id": "140",
+							"uri": "http://nginx-proxy/pago/ver-cuotas/500",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -446,7 +455,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "131",
+							"id": "136",
 							"uri": "http://nginx-proxy/pago/ver-cuotas/600",
 							"method": "GET",
 							"param": "",
@@ -455,7 +464,16 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "129",
+							"id": "121",
+							"uri": "http://nginx-proxy/pago/ver-cuotas/700",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<link rel=\"stylesheet\" href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css\">",
+							"otherinfo": ""
+						},
+						{
+							"id": "123",
 							"uri": "http://nginx-proxy/registro",
 							"method": "GET",
 							"param": "",
@@ -464,7 +482,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "137",
+							"id": "132",
 							"uri": "http://nginx-proxy/reporte",
 							"method": "GET",
 							"param": "",
@@ -473,7 +491,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "136",
+							"id": "134",
 							"uri": "http://nginx-proxy/resumen/100",
 							"method": "GET",
 							"param": "",
@@ -482,7 +500,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "130",
+							"id": "135",
 							"uri": "http://nginx-proxy/resumen/1000",
 							"method": "GET",
 							"param": "",
@@ -491,8 +509,8 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "113",
-							"uri": "http://nginx-proxy/resumen/400",
+							"id": "138",
+							"uri": "http://nginx-proxy/resumen/200",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -500,17 +518,8 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "139",
-							"uri": "http://nginx-proxy/resumen/500",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css\">",
-							"otherinfo": ""
-						},
-						{
-							"id": "134",
-							"uri": "http://nginx-proxy/resumen/700",
+							"id": "130",
+							"uri": "http://nginx-proxy/resumen/300",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -519,7 +528,25 @@
 						},
 						{
 							"id": "119",
-							"uri": "http://nginx-proxy/resumen/800",
+							"uri": "http://nginx-proxy/resumen/400",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css\">",
+							"otherinfo": ""
+						},
+						{
+							"id": "120",
+							"uri": "http://nginx-proxy/resumen/500",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css\">",
+							"otherinfo": ""
+						},
+						{
+							"id": "133",
+							"uri": "http://nginx-proxy/resumen/900",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -527,13 +554,13 @@
 							"otherinfo": ""
 						}
 					],
-					"count": "15",
+					"count": "17",
 					"solution": "<p>Provide a valid integrity attribute to the tag.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/Security/Subresource_Integrity</p>",
 					"cweid": "345",
 					"wascid": "15",
-					"sourceid": "23"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "90022",
@@ -546,7 +573,7 @@
 					"desc": "<p>This page contains an error/warning message that may disclose sensitive information like the location of the file that produced the unhandled exception. This information can be used to launch further attacks against the web application. The alert could be a false positive if the error message is found inside a documentation page.</p>",
 					"instances":[ 
 						{
-							"id": "9",
+							"id": "17",
 							"uri": "http://nginx-proxy/nota",
 							"method": "POST",
 							"param": "",
@@ -561,7 +588,7 @@
 					"reference": "",
 					"cweid": "550",
 					"wascid": "13",
-					"sourceid": "50"
+					"sourceid": "54"
 				},
 				{
 					"pluginid": "10023",
@@ -574,7 +601,7 @@
 					"desc": "<p>The response appeared to contain common error messages returned by platforms such as ASP.NET, and Web-servers such as IIS and Apache. You can configure the list of common debug messages.</p>",
 					"instances":[ 
 						{
-							"id": "17",
+							"id": "29",
 							"uri": "http://nginx-proxy/nota",
 							"method": "POST",
 							"param": "",
@@ -589,7 +616,7 @@
 					"reference": "",
 					"cweid": "1295",
 					"wascid": "13",
-					"sourceid": "50"
+					"sourceid": "54"
 				},
 				{
 					"pluginid": "90004",
@@ -602,7 +629,7 @@
 					"desc": "<p>Cross-Origin-Resource-Policy header is an opt-in header designed to counter side-channels attacks like Spectre. Resource should be specifically set as shareable amongst different origins.</p>",
 					"instances":[ 
 						{
-							"id": "112",
+							"id": "95",
 							"uri": "http://nginx-proxy",
 							"method": "GET",
 							"param": "Cross-Origin-Resource-Policy",
@@ -611,8 +638,8 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "102",
-							"uri": "http://nginx-proxy/nota",
+							"id": "109",
+							"uri": "http://nginx-proxy/",
 							"method": "GET",
 							"param": "Cross-Origin-Resource-Policy",
 							"attack": "",
@@ -620,8 +647,8 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "86",
-							"uri": "http://nginx-proxy/pago/ver-cuotas/100",
+							"id": "85",
+							"uri": "http://nginx-proxy/nota",
 							"method": "GET",
 							"param": "Cross-Origin-Resource-Policy",
 							"attack": "",
@@ -638,7 +665,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "70",
+							"id": "71",
 							"uri": "http://nginx-proxy/pago/ver-cuotas/300",
 							"method": "GET",
 							"param": "Cross-Origin-Resource-Policy",
@@ -647,8 +674,35 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "91",
-							"uri": "http://nginx-proxy/pago/ver-cuotas/600",
+							"id": "104",
+							"uri": "http://nginx-proxy/pago/ver-cuotas/500",
+							"method": "GET",
+							"param": "Cross-Origin-Resource-Policy",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "83",
+							"uri": "http://nginx-proxy/registro",
+							"method": "GET",
+							"param": "Cross-Origin-Resource-Policy",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "70",
+							"uri": "http://nginx-proxy/reporte",
+							"method": "GET",
+							"param": "Cross-Origin-Resource-Policy",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "110",
+							"uri": "http://nginx-proxy/resumen/100",
 							"method": "GET",
 							"param": "Cross-Origin-Resource-Policy",
 							"attack": "",
@@ -657,15 +711,6 @@
 						},
 						{
 							"id": "99",
-							"uri": "http://nginx-proxy/reporte",
-							"method": "GET",
-							"param": "Cross-Origin-Resource-Policy",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"id": "107",
 							"uri": "http://nginx-proxy/resumen/200",
 							"method": "GET",
 							"param": "Cross-Origin-Resource-Policy",
@@ -674,7 +719,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "75",
+							"id": "89",
 							"uri": "http://nginx-proxy/resumen/300",
 							"method": "GET",
 							"param": "Cross-Origin-Resource-Policy",
@@ -683,25 +728,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "98",
-							"uri": "http://nginx-proxy/resumen/400",
-							"method": "GET",
-							"param": "Cross-Origin-Resource-Policy",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"id": "106",
-							"uri": "http://nginx-proxy/resumen/500",
-							"method": "GET",
-							"param": "Cross-Origin-Resource-Policy",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"id": "117",
+							"id": "108",
 							"uri": "http://nginx-proxy",
 							"method": "GET",
 							"param": "Cross-Origin-Embedder-Policy",
@@ -710,89 +737,17 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "104",
+							"id": "116",
+							"uri": "http://nginx-proxy/",
+							"method": "GET",
+							"param": "Cross-Origin-Embedder-Policy",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "106",
 							"uri": "http://nginx-proxy/nota",
-							"method": "GET",
-							"param": "Cross-Origin-Embedder-Policy",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"id": "96",
-							"uri": "http://nginx-proxy/pago/ver-cuotas/100",
-							"method": "GET",
-							"param": "Cross-Origin-Embedder-Policy",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"id": "101",
-							"uri": "http://nginx-proxy/pago/ver-cuotas/200",
-							"method": "GET",
-							"param": "Cross-Origin-Embedder-Policy",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"id": "87",
-							"uri": "http://nginx-proxy/pago/ver-cuotas/300",
-							"method": "GET",
-							"param": "Cross-Origin-Embedder-Policy",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"id": "94",
-							"uri": "http://nginx-proxy/pago/ver-cuotas/600",
-							"method": "GET",
-							"param": "Cross-Origin-Embedder-Policy",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"id": "100",
-							"uri": "http://nginx-proxy/reporte",
-							"method": "GET",
-							"param": "Cross-Origin-Embedder-Policy",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"id": "124",
-							"uri": "http://nginx-proxy/resumen/200",
-							"method": "GET",
-							"param": "Cross-Origin-Embedder-Policy",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"id": "97",
-							"uri": "http://nginx-proxy/resumen/300",
-							"method": "GET",
-							"param": "Cross-Origin-Embedder-Policy",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"id": "105",
-							"uri": "http://nginx-proxy/resumen/400",
-							"method": "GET",
-							"param": "Cross-Origin-Embedder-Policy",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"id": "111",
-							"uri": "http://nginx-proxy/resumen/500",
 							"method": "GET",
 							"param": "Cross-Origin-Embedder-Policy",
 							"attack": "",
@@ -801,6 +756,78 @@
 						},
 						{
 							"id": "125",
+							"uri": "http://nginx-proxy/pago/ver-cuotas/200",
+							"method": "GET",
+							"param": "Cross-Origin-Embedder-Policy",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "112",
+							"uri": "http://nginx-proxy/pago/ver-cuotas/300",
+							"method": "GET",
+							"param": "Cross-Origin-Embedder-Policy",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "122",
+							"uri": "http://nginx-proxy/pago/ver-cuotas/500",
+							"method": "GET",
+							"param": "Cross-Origin-Embedder-Policy",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "101",
+							"uri": "http://nginx-proxy/registro",
+							"method": "GET",
+							"param": "Cross-Origin-Embedder-Policy",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "92",
+							"uri": "http://nginx-proxy/reporte",
+							"method": "GET",
+							"param": "Cross-Origin-Embedder-Policy",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "111",
+							"uri": "http://nginx-proxy/resumen/100",
+							"method": "GET",
+							"param": "Cross-Origin-Embedder-Policy",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "105",
+							"uri": "http://nginx-proxy/resumen/200",
+							"method": "GET",
+							"param": "Cross-Origin-Embedder-Policy",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "93",
+							"uri": "http://nginx-proxy/resumen/300",
+							"method": "GET",
+							"param": "Cross-Origin-Embedder-Policy",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "117",
 							"uri": "http://nginx-proxy",
 							"method": "GET",
 							"param": "Cross-Origin-Opener-Policy",
@@ -809,35 +836,8 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "114",
-							"uri": "http://nginx-proxy/nota",
-							"method": "GET",
-							"param": "Cross-Origin-Opener-Policy",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"id": "120",
-							"uri": "http://nginx-proxy/pago/ver-cuotas/100",
-							"method": "GET",
-							"param": "Cross-Origin-Opener-Policy",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"id": "116",
-							"uri": "http://nginx-proxy/pago/ver-cuotas/200",
-							"method": "GET",
-							"param": "Cross-Origin-Opener-Policy",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"id": "89",
-							"uri": "http://nginx-proxy/pago/ver-cuotas/300",
+							"id": "129",
+							"uri": "http://nginx-proxy/",
 							"method": "GET",
 							"param": "Cross-Origin-Opener-Policy",
 							"attack": "",
@@ -846,7 +846,7 @@
 						},
 						{
 							"id": "118",
-							"uri": "http://nginx-proxy/pago/ver-cuotas/600",
+							"uri": "http://nginx-proxy/nota",
 							"method": "GET",
 							"param": "Cross-Origin-Opener-Policy",
 							"attack": "",
@@ -854,7 +854,43 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "115",
+							"id": "137",
+							"uri": "http://nginx-proxy/pago/ver-cuotas/200",
+							"method": "GET",
+							"param": "Cross-Origin-Opener-Policy",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "143",
+							"uri": "http://nginx-proxy/pago/ver-cuotas/300",
+							"method": "GET",
+							"param": "Cross-Origin-Opener-Policy",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "124",
+							"uri": "http://nginx-proxy/pago/ver-cuotas/500",
+							"method": "GET",
+							"param": "Cross-Origin-Opener-Policy",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "103",
+							"uri": "http://nginx-proxy/registro",
+							"method": "GET",
+							"param": "Cross-Origin-Opener-Policy",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "113",
 							"uri": "http://nginx-proxy/reporte",
 							"method": "GET",
 							"param": "Cross-Origin-Opener-Policy",
@@ -863,7 +899,16 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "133",
+							"id": "114",
+							"uri": "http://nginx-proxy/resumen/100",
+							"method": "GET",
+							"param": "Cross-Origin-Opener-Policy",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "128",
 							"uri": "http://nginx-proxy/resumen/200",
 							"method": "GET",
 							"param": "Cross-Origin-Opener-Policy",
@@ -872,26 +917,8 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "108",
+							"id": "115",
 							"uri": "http://nginx-proxy/resumen/300",
-							"method": "GET",
-							"param": "Cross-Origin-Opener-Policy",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"id": "110",
-							"uri": "http://nginx-proxy/resumen/400",
-							"method": "GET",
-							"param": "Cross-Origin-Opener-Policy",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"id": "135",
-							"uri": "http://nginx-proxy/resumen/500",
 							"method": "GET",
 							"param": "Cross-Origin-Opener-Policy",
 							"attack": "",
@@ -918,7 +945,7 @@
 					"desc": "<p>Permissions Policy Header is an added layer of security that helps to restrict from unauthorized access or usage of browser/client features by web resources. This policy ensures the user privacy by limiting or specifying the features of the browsers can be used by the web resources. Permissions Policy provides a set of standard HTTP headers that allow website owners to limit which features of browsers can be used by the page such as camera, microphone, location, full screen etc.</p>",
 					"instances":[ 
 						{
-							"id": "66",
+							"id": "73",
 							"uri": "http://nginx-proxy",
 							"method": "GET",
 							"param": "",
@@ -927,7 +954,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "90",
+							"id": "91",
 							"uri": "http://nginx-proxy/",
 							"method": "GET",
 							"param": "",
@@ -936,7 +963,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "80",
+							"id": "84",
 							"uri": "http://nginx-proxy/nota",
 							"method": "GET",
 							"param": "",
@@ -945,16 +972,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "84",
-							"uri": "http://nginx-proxy/pago/ver-cuotas/100",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"id": "76",
+							"id": "77",
 							"uri": "http://nginx-proxy/pago/ver-cuotas/200",
 							"method": "GET",
 							"param": "",
@@ -963,7 +981,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "62",
+							"id": "61",
 							"uri": "http://nginx-proxy/pago/ver-cuotas/300",
 							"method": "GET",
 							"param": "",
@@ -972,7 +990,16 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "83",
+							"id": "80",
+							"uri": "http://nginx-proxy/pago/ver-cuotas/500",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "107",
 							"uri": "http://nginx-proxy/pago/ver-cuotas/600",
 							"method": "GET",
 							"param": "",
@@ -981,17 +1008,8 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "103",
-							"uri": "http://nginx-proxy/registro",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"id": "95",
-							"uri": "http://nginx-proxy/reporte",
+							"id": "100",
+							"uri": "http://nginx-proxy/pago/ver-cuotas/700",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1000,6 +1018,33 @@
 						},
 						{
 							"id": "81",
+							"uri": "http://nginx-proxy/registro",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "60",
+							"uri": "http://nginx-proxy/reporte",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "94",
+							"uri": "http://nginx-proxy/resumen/100",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "96",
 							"uri": "http://nginx-proxy/resumen/200",
 							"method": "GET",
 							"param": "",
@@ -1008,7 +1053,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "65",
+							"id": "74",
 							"uri": "http://nginx-proxy/resumen/300",
 							"method": "GET",
 							"param": "",
@@ -1017,7 +1062,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "93",
+							"id": "97",
 							"uri": "http://nginx-proxy/resumen/400",
 							"method": "GET",
 							"param": "",
@@ -1026,17 +1071,8 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "77",
+							"id": "98",
 							"uri": "http://nginx-proxy/resumen/500",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"id": "92",
-							"uri": "http://nginx-proxy/resumen/800",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1044,13 +1080,13 @@
 							"otherinfo": ""
 						}
 					],
-					"count": "14",
+					"count": "15",
 					"solution": "<p>Ensure that your web server, application server, load balancer, etc. is configured to set the Permissions-Policy header.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Permissions-Policy</p><p>https://developer.chrome.com/blog/feature-policy/</p><p>https://scotthelme.co.uk/a-new-security-header-feature-policy/</p><p>https://w3c.github.io/webappsec-feature-policy/</p><p>https://www.smashingmagazine.com/2018/12/feature-policy/</p>",
 					"cweid": "693",
 					"wascid": "15",
-					"sourceid": "6"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "10036",
@@ -1063,7 +1099,7 @@
 					"desc": "<p>The web/application server is leaking version information via the \"Server\" HTTP response header. Access to such information may facilitate attackers identifying other vulnerabilities your web/application server is subject to.</p>",
 					"instances":[ 
 						{
-							"id": "35",
+							"id": "33",
 							"uri": "http://nginx-proxy",
 							"method": "GET",
 							"param": "",
@@ -1072,7 +1108,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "33",
+							"id": "37",
 							"uri": "http://nginx-proxy/",
 							"method": "GET",
 							"param": "",
@@ -1081,8 +1117,8 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "47",
-							"uri": "http://nginx-proxy/pago/ver-cuotas/100",
+							"id": "38",
+							"uri": "http://nginx-proxy/nota",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1090,16 +1126,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "32",
-							"uri": "http://nginx-proxy/pago/ver-cuotas/200",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "nginx/1.27.4",
-							"otherinfo": ""
-						},
-						{
-							"id": "41",
+							"id": "27",
 							"uri": "http://nginx-proxy/pago/ver-cuotas/300",
 							"method": "GET",
 							"param": "",
@@ -1108,7 +1135,16 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "39",
+							"id": "44",
+							"uri": "http://nginx-proxy/pago/ver-cuotas/500",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "nginx/1.27.4",
+							"otherinfo": ""
+						},
+						{
+							"id": "51",
 							"uri": "http://nginx-proxy/pago/ver-cuotas/600",
 							"method": "GET",
 							"param": "",
@@ -1117,7 +1153,25 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "22",
+							"id": "28",
+							"uri": "http://nginx-proxy/pago/ver-cuotas/700",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "nginx/1.27.4",
+							"otherinfo": ""
+						},
+						{
+							"id": "35",
+							"uri": "http://nginx-proxy/registro",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "nginx/1.27.4",
+							"otherinfo": ""
+						},
+						{
+							"id": "31",
 							"uri": "http://nginx-proxy/reporte",
 							"method": "GET",
 							"param": "",
@@ -1127,15 +1181,6 @@
 						},
 						{
 							"id": "34",
-							"uri": "http://nginx-proxy/resumen/200",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "nginx/1.27.4",
-							"otherinfo": ""
-						},
-						{
-							"id": "42",
 							"uri": "http://nginx-proxy/resumen/300",
 							"method": "GET",
 							"param": "",
@@ -1144,16 +1189,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "25",
-							"uri": "http://nginx-proxy/resumen/500",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "nginx/1.27.4",
-							"otherinfo": ""
-						},
-						{
-							"id": "11",
+							"id": "30",
 							"uri": "http://nginx-proxy/robots.txt",
 							"method": "GET",
 							"param": "",
@@ -1162,7 +1198,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "10",
+							"id": "25",
 							"uri": "http://nginx-proxy/sitemap.xml",
 							"method": "GET",
 							"param": "",
@@ -1171,7 +1207,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "26",
+							"id": "45",
 							"uri": "http://nginx-proxy/nota",
 							"method": "POST",
 							"param": "",
@@ -1199,7 +1235,7 @@
 					"desc": "<p>The Anti-MIME-Sniffing header X-Content-Type-Options was not set to 'nosniff'. This allows older versions of Internet Explorer and Chrome to perform MIME-sniffing on the response body, potentially causing the response body to be interpreted and displayed as a content type other than the declared content type. Current (early 2014) and legacy versions of Firefox will use the declared content type (if one is set), rather than performing MIME-sniffing.</p>",
 					"instances":[ 
 						{
-							"id": "50",
+							"id": "42",
 							"uri": "http://nginx-proxy",
 							"method": "GET",
 							"param": "x-content-type-options",
@@ -1208,7 +1244,7 @@
 							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
 						},
 						{
-							"id": "48",
+							"id": "50",
 							"uri": "http://nginx-proxy/",
 							"method": "GET",
 							"param": "x-content-type-options",
@@ -1217,7 +1253,7 @@
 							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
 						},
 						{
-							"id": "56",
+							"id": "52",
 							"uri": "http://nginx-proxy/nota",
 							"method": "GET",
 							"param": "x-content-type-options",
@@ -1226,16 +1262,7 @@
 							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
 						},
 						{
-							"id": "51",
-							"uri": "http://nginx-proxy/pago/ver-cuotas/100",
-							"method": "GET",
-							"param": "x-content-type-options",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
-						},
-						{
-							"id": "38",
+							"id": "58",
 							"uri": "http://nginx-proxy/pago/ver-cuotas/200",
 							"method": "GET",
 							"param": "x-content-type-options",
@@ -1244,7 +1271,7 @@
 							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
 						},
 						{
-							"id": "44",
+							"id": "32",
 							"uri": "http://nginx-proxy/pago/ver-cuotas/300",
 							"method": "GET",
 							"param": "x-content-type-options",
@@ -1253,7 +1280,16 @@
 							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
 						},
 						{
-							"id": "46",
+							"id": "53",
+							"uri": "http://nginx-proxy/pago/ver-cuotas/500",
+							"method": "GET",
+							"param": "x-content-type-options",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
+						},
+						{
+							"id": "62",
 							"uri": "http://nginx-proxy/pago/ver-cuotas/600",
 							"method": "GET",
 							"param": "x-content-type-options",
@@ -1262,7 +1298,16 @@
 							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
 						},
 						{
-							"id": "55",
+							"id": "46",
+							"uri": "http://nginx-proxy/pago/ver-cuotas/700",
+							"method": "GET",
+							"param": "x-content-type-options",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
+						},
+						{
+							"id": "40",
 							"uri": "http://nginx-proxy/registro",
 							"method": "GET",
 							"param": "x-content-type-options",
@@ -1280,7 +1325,16 @@
 							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
 						},
 						{
-							"id": "52",
+							"id": "69",
+							"uri": "http://nginx-proxy/resumen/100",
+							"method": "GET",
+							"param": "x-content-type-options",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
+						},
+						{
+							"id": "75",
 							"uri": "http://nginx-proxy/resumen/200",
 							"method": "GET",
 							"param": "x-content-type-options",
@@ -1289,7 +1343,7 @@
 							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
 						},
 						{
-							"id": "54",
+							"id": "48",
 							"uri": "http://nginx-proxy/resumen/300",
 							"method": "GET",
 							"param": "x-content-type-options",
@@ -1298,8 +1352,8 @@
 							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
 						},
 						{
-							"id": "29",
-							"uri": "http://nginx-proxy/resumen/500",
+							"id": "65",
+							"uri": "http://nginx-proxy/resumen/400",
 							"method": "GET",
 							"param": "x-content-type-options",
 							"attack": "",
@@ -1307,7 +1361,7 @@
 							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
 						}
 					],
-					"count": "12",
+					"count": "14",
 					"solution": "<p>Ensure that the application/web server sets the Content-Type header appropriately, and that it sets the X-Content-Type-Options header to 'nosniff' for all web pages.</p><p>If possible, ensure that the end user uses a standards-compliant and modern web browser that does not perform MIME-sniffing at all, or that can be directed by the web application/web server to not perform MIME-sniffing.</p>",
 					"otherinfo": "<p>This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.</p><p>At \"High\" threshold this scan rule will not alert on client or server error responses.</p>",
 					"reference": "<p>https://learn.microsoft.com/en-us/previous-versions/windows/internet-explorer/ie-developer/compatibility/gg622941(v=vs.85)</p><p>https://owasp.org/www-community/Security_Headers</p>",
@@ -1326,7 +1380,7 @@
 					"desc": "<p>The response contents are not storable by caching components such as proxy servers. If the response does not contain sensitive, personal or user-specific information, it may benefit from being stored and cached, to improve performance.</p>",
 					"instances":[ 
 						{
-							"id": "57",
+							"id": "72",
 							"uri": "http://nginx-proxy/nota",
 							"method": "POST",
 							"param": "",
@@ -1341,7 +1395,7 @@
 					"reference": "<p>https://datatracker.ietf.org/doc/html/rfc7234</p><p>https://datatracker.ietf.org/doc/html/rfc7231</p><p>https://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html</p>",
 					"cweid": "524",
 					"wascid": "13",
-					"sourceid": "50"
+					"sourceid": "54"
 				},
 				{
 					"pluginid": "10049",
@@ -1354,7 +1408,7 @@
 					"desc": "<p>The response contents are storable by caching components such as proxy servers, and may be retrieved directly from the cache, rather than from the origin server by the caching servers, in response to similar requests from other users. If the response data is sensitive, personal or user-specific, this may result in sensitive information being leaked. In some cases, this may even result in a user gaining complete control of the session of another user, depending on the configuration of the caching components in use in their environment. This is primarily an issue where \"shared\" caching servers such as \"proxy\" caches are configured on the local network. This configuration is typically found in corporate or educational environments, for instance.</p>",
 					"instances":[ 
 						{
-							"id": "63",
+							"id": "59",
 							"uri": "http://nginx-proxy",
 							"method": "GET",
 							"param": "",
@@ -1363,7 +1417,7 @@
 							"otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
 						},
 						{
-							"id": "68",
+							"id": "67",
 							"uri": "http://nginx-proxy/",
 							"method": "GET",
 							"param": "",
@@ -1372,7 +1426,7 @@
 							"otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
 						},
 						{
-							"id": "73",
+							"id": "79",
 							"uri": "http://nginx-proxy/nota",
 							"method": "GET",
 							"param": "",
@@ -1381,16 +1435,7 @@
 							"otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
 						},
 						{
-							"id": "74",
-							"uri": "http://nginx-proxy/pago/ver-cuotas/100",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
-						},
-						{
-							"id": "64",
+							"id": "66",
 							"uri": "http://nginx-proxy/pago/ver-cuotas/200",
 							"method": "GET",
 							"param": "",
@@ -1399,7 +1444,7 @@
 							"otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
 						},
 						{
-							"id": "58",
+							"id": "55",
 							"uri": "http://nginx-proxy/pago/ver-cuotas/300",
 							"method": "GET",
 							"param": "",
@@ -1408,7 +1453,16 @@
 							"otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
 						},
 						{
-							"id": "72",
+							"id": "64",
+							"uri": "http://nginx-proxy/pago/ver-cuotas/500",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
+						},
+						{
+							"id": "86",
 							"uri": "http://nginx-proxy/pago/ver-cuotas/600",
 							"method": "GET",
 							"param": "",
@@ -1417,7 +1471,16 @@
 							"otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
 						},
 						{
-							"id": "79",
+							"id": "76",
+							"uri": "http://nginx-proxy/pago/ver-cuotas/700",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
+						},
+						{
+							"id": "63",
 							"uri": "http://nginx-proxy/registro",
 							"method": "GET",
 							"param": "",
@@ -1426,7 +1489,7 @@
 							"otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
 						},
 						{
-							"id": "69",
+							"id": "56",
 							"uri": "http://nginx-proxy/reporte",
 							"method": "GET",
 							"param": "",
@@ -1435,7 +1498,7 @@
 							"otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
 						},
 						{
-							"id": "78",
+							"id": "90",
 							"uri": "http://nginx-proxy/resumen/200",
 							"method": "GET",
 							"param": "",
@@ -1444,7 +1507,7 @@
 							"otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
 						},
 						{
-							"id": "59",
+							"id": "68",
 							"uri": "http://nginx-proxy/resumen/300",
 							"method": "GET",
 							"param": "",
@@ -1453,7 +1516,16 @@
 							"otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
 						},
 						{
-							"id": "67",
+							"id": "88",
+							"uri": "http://nginx-proxy/resumen/400",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
+						},
+						{
+							"id": "87",
 							"uri": "http://nginx-proxy/resumen/500",
 							"method": "GET",
 							"param": "",
@@ -1462,7 +1534,7 @@
 							"otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
 						},
 						{
-							"id": "60",
+							"id": "54",
 							"uri": "http://nginx-proxy/robots.txt",
 							"method": "GET",
 							"param": "",
@@ -1471,7 +1543,7 @@
 							"otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
 						},
 						{
-							"id": "61",
+							"id": "57",
 							"uri": "http://nginx-proxy/sitemap.xml",
 							"method": "GET",
 							"param": "",
@@ -1480,13 +1552,13 @@
 							"otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
 						}
 					],
-					"count": "14",
+					"count": "16",
 					"solution": "<p>Validate that the response does not contain sensitive, personal or user-specific information. If it does, consider the use of the following HTTP response headers, to limit, or prevent the content being stored and retrieved from the cache by another user:</p><p>Cache-Control: no-cache, no-store, must-revalidate, private</p><p>Pragma: no-cache</p><p>Expires: 0</p><p>This configuration directs both HTTP 1.0 and HTTP 1.1 compliant caching servers to not store the response, and to not retrieve the response (without validation) from the cache, in response to a similar request.</p>",
 					"otherinfo": "<p>In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234.</p>",
 					"reference": "<p>https://datatracker.ietf.org/doc/html/rfc7234</p><p>https://datatracker.ietf.org/doc/html/rfc7231</p><p>https://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html</p>",
 					"cweid": "524",
 					"wascid": "13",
-					"sourceid": "6"
+					"sourceid": "1"
 				}
 			]
 		}

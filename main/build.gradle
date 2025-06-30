@@ -35,7 +35,7 @@ sonarqube {
 dependencyCheck {
     // failBuildOnCVSS = 7.0  // Falla el build si se encuentra una vulnerabilidad crítica (CVSS >= 7)
     format = 'HTML'         // Puedes cambiar el formato de salida si prefieres XML o JSON
-    outputDirectory = "build/reports/dependency-check"  // Donde guardar el reporte
+    outputDirectory = 'C:/Users/vicen/dependency-check-reports'  // Donde guardar el reporte
 }
 
 dependencies {
