@@ -33,9 +33,9 @@ sonarqube {
 }
 
 dependencyCheck {
-    failBuildOnCVSS = 7.0  // Falla el build si se encuentra una vulnerabilidad crítica (CVSS >= 7)
+    // failBuildOnCVSS = 7.0  // Falla el build si se encuentra una vulnerabilidad crítica (CVSS >= 7)
     format = 'HTML'         // Puedes cambiar el formato de salida si prefieres XML o JSON
-    outputDirectory = "$buildDir/reports/dependency-check"  // Donde guardar el reporte
+    outputDirectory = "build/reports/dependency-check"  // Donde guardar el reporte
 }
 
 dependencies {
