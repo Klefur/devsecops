@@ -6,6 +6,7 @@ pipeline {
     environment {
         ZAP_CONTAINER_NAME = 'zap'  // Nombre del contenedor ZAP en ejecución
         ZAP_PORT = '80'          // Puerto en el que ZAP está escuchando
+        SONARQUBE_SERVER = 'SonarQube'
     }
     stages {
         stage('Build JAR File') {
@@ -27,8 +28,8 @@ pipeline {
             steps {
                 dir("main") {
                     script {
-                        withCredentials([usernamePassword(credentialsId: 'docker-credencials', usernameVariable: 'DOCKER_USERNAME', passwordVariable: 'DOCKER_PASSWORD')]) {
-                            bat 'docker login -u $DOCKER_USERNAME -p $DOCKER_PASSWORD'
+                        withCredentials([usernamePassword(credentialsId: 'docker-credentials2', usernameVariable: 'DOCKER_USERNAME', passwordVariable: 'DOCKER_PASSWORD')]) {
+                            bat 'docker login -u %DOCKER_USERNAME% -p %DOCKER_PASSWORD%'
                         }
                         bat "docker build -t klefurusach/tingeso-pep1 ."
                         bat "docker push klefurusach/tingeso-pep1"
@@ -37,7 +38,18 @@ pipeline {
                 }
             }
         }
-
+        
+        stage('Run OWASP Dependency-Check (SCA)') {
+            steps {
+                dir('main'){
+                    script {
+                        // Ejecutar OWASP Dependency-Check
+                        bat 'gradle dependencyCheckAnalyze'  // Análisis de dependencias
+                    }
+                }
+            }
+        }
+        
         stage("SAST Test - SonarQube") {
            steps {
                 dir("main") {
@@ -49,6 +61,7 @@ pipeline {
                 }
             }
         }
+        
 
         stage("Deploy") {
             steps {
