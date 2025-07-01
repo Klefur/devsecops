@@ -51,9 +51,9 @@ public class NotaService {
         }
     }
 
-    public List<Nota> getByUser(Long uId) {
-        return notaRep.findAllByUsuario(uServ.show(uId));
-    }
+    // public List<Nota> getByUser(Long uId) {
+    //     return notaRep.findAllByUsuario(uServ.show(uId));
+    // }
 
     public double promedioGeneralNotas(Long uId) {
         List<Nota> notas = getByUser(uId);
